@@ -1,0 +1,68 @@
+/* Global styles */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: aqua;
+  color: rgb(1, 8, 99);
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  justify-content: center;
+  margin: auto; /* Center the header */
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  padding: 20px;
+}
+
+aside {
+  background-color: rgb(25, 110, 82);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+section {
+  background-color: rgb(58, 201, 154);
+  width: 75%;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.fish-cards li,
+.locations li,
+.tank-tips-quotes li {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
