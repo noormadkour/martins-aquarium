@@ -1,4 +1,4 @@
-import { getFish } from "./scripts/database.js";
+import { getFish } from "scripts/database.js";
 
 export const fishList = () => {
   // Invoke the function that you imported from the database module

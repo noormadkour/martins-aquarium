@@ -1,5 +1,5 @@
-import { fishList } from "./scripts/fishlist.js";
+import { fishList } from "./scripts/fishList.js";
 
-let parentHTMLElement = document.getElementsByClassName("fish-container");
+let parentHTMLElement = document.querySelector(".fish-container");
 
 parentHTMLElement.innerHTML = fishList();
