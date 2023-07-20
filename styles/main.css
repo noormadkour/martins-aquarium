@@ -23,7 +23,7 @@ h1 {
 
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
   padding: 20px;
 }
@@ -31,8 +31,14 @@ main {
 .fish-container {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
+  justify-content: space-evenly;
+  width: auto;
 }
+
+.overall-fish{
+  justify-content: center;
+}
+
 #fc-header {
   display: flex;
   flex-wrap: nowrap;
@@ -42,19 +48,23 @@ aside {
   background-color: rgb(25, 110, 82);
   width: 100%;
   padding: 20px;
-  box-sizing: border-box; /* Include padding and border in the width */
+  box-sizing: border-box;
 }
 
 .aside-tips {
   align-content: flex-start;
-  width: 25%;
+  width: auto;
 }
 
 section {
-  width: 75%;
+  width: auto;
   background-color: rgb(58, 201, 154);
   padding: 20px;
-  box-sizing: border-box; /* Include padding and border in the width */
+  box-sizing: border-box;
+}
+
+div {
+  justify-content: center;
 }
 
 h2 {
@@ -72,19 +82,24 @@ li {
   margin-bottom: 10px;
 }
 
-.fish-cards {
+.fish__cards {
+  justify-content: center;
+  align-content: center;
   display: flex;
   flex-wrap: wrap;
+}
+.fish__card {
+  background-color: aqua;
+  justify-content: center;
 }
 
 .fish__image {
   width: 100px;
+  border-radius: 10%;
 }
 
-.fish-cards li,
-.locations li,
-.tank-tips-quotes li {
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
+.fish__species .fish__name .fish__length .fish__location .fish__diet {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
