@@ -1,7 +1,5 @@
 /* Global styles */
 body {
-  display: flex;
-  flex-wrap: wrap;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -26,8 +24,18 @@ h1 {
 main {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
+  width: 100%;
   padding: 20px;
+}
+
+.fish-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+#fc-header {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 aside {
@@ -37,9 +45,14 @@ aside {
   box-sizing: border-box; /* Include padding and border in the width */
 }
 
+.aside-tips {
+  align-content: flex-start;
+  width: 25%;
+}
+
 section {
-  background-color: rgb(58, 201, 154);
   width: 75%;
+  background-color: rgb(58, 201, 154);
   padding: 20px;
   box-sizing: border-box; /* Include padding and border in the width */
 }
@@ -57,6 +70,15 @@ ul {
 
 li {
   margin-bottom: 10px;
+}
+
+.fish-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fish__image {
+  width: 100px;
 }
 
 .fish-cards li,

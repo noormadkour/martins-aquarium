@@ -1,4 +1,4 @@
-import { fishList } from "./scripts/fishList.js";
+import { fishList } from "./fishList.js";
 
 let parentHTMLElement = document.querySelector(".fish-container");
 

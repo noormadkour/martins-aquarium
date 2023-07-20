@@ -1,19 +1,12 @@
-import { getFish } from "scripts/database.js";
+import { getFish } from "./database.js";
 
 export const fishList = () => {
-  // Invoke the function that you imported from the database module
   const fishes = getFish();
-
-  // Start building a string filled with HTML syntax
-  let htmlString = `<article class="fish-container">
-        <h2 id="fc-header">Fish Collection</h2>`;
-
-  // Create HTNL representations of each fish here
+  let htmlString = `<article class="fish-container">`;
   for (const fish of fishes) {
-    // Why is there a backtick used for this string?
     htmlString += `
-        <section class="fish card">
-            <div><img  class="fish__image image--card" src="${fish.image}" /></div>
+        <section class="fish__cards">
+            <div><img  class="fish__image" src="${fish.image}" /></div>
             <div class="fish__name">${fish.name}</div>
             <div class="fish__species">${fish.species}</div>
             <div class="fish__length">${fish.size}</div>
@@ -22,6 +15,6 @@ export const fishList = () => {
         </section>
 `;
   }
-  htmlString += `</article>`
+  htmlString += `</article>`;
   return htmlString;
 };
