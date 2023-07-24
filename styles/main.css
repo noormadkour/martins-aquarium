@@ -31,11 +31,34 @@ main {
 .fish-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: auto;
 }
 
-.overall-fish{
+.location-list {
+  box-sizing: border-box;
+}
+
+.locations {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#location {
+  background-color: aliceblue;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.overall-fish {
   justify-content: center;
 }
 
@@ -52,8 +75,28 @@ aside {
 }
 
 .aside-tips {
-  align-content: flex-start;
-  width: auto;
+  width: 200px;
+}
+
+.tips {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+#tip {
+  margin: 10px;
+}
+
+.lc-tips{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lc-tip {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
 }
 
 section {

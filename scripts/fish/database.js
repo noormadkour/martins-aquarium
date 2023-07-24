@@ -46,10 +46,71 @@ const database = {
       location: "Headmaster's Aquarium",
     },
   ],
+  tips: [
+    {
+      id: 1,
+      tip: "Perform regular water changes to maintain water quality.",
+      category: "cleanliness",
+    },
+    {
+      id: 2,
+      tip: "Monitor the salinity levels regularly for saltwater tanks.",
+      category: "salinity",
+    },
+    {
+      id: 3,
+      tip: "Arrange tank decorations and plants for optimal feng shui.",
+      category: "organization",
+    },
+    {
+      id: 4,
+      tip: "Avoid overfeeding the fish to prevent water contamination.",
+      category: "cleanliness",
+    },
+    {
+      id: 5,
+      tip: "Keep a consistent light schedule to mimic natural day-night cycles.",
+      category: "lighting",
+    },
+  ],
+  locations: [
+    {
+      location: "Lake Michigan",
+      harvestingTip:
+        "Check local fishing regulations and obtain necessary permits before harvesting fish from Gryffindor Pond.",
+    },
+    {
+      location: "Gulf of Mexico",
+      harvestingTip:
+        "Be mindful of catch limits and avoid harvesting endangered species in the the Library Lake.",
+    },
+    {
+      location: "Amazon River",
+      harvestingTip:
+        "Harvest fish sustainably to preserve the unique biodiversity of the Owlery Pond.",
+    },
+    {
+      location: "Pacific Ocean",
+      harvestingTip:
+        "Be aware of potential contamination in certain areas of Snapes Storeroom and follow consumption advisories.",
+    },
+  ],
 };
 
 export const getFish = () => {
   return database.fish.map((fish) => ({ ...fish }));
+};
+
+export const getTips = () => {
+  return database.tips.map((tip) => ({ ...tip }));
+};
+
+export const getLocations = () => {
+  return database.fish.map((location) => ({ ...location }));
+};
+
+export const getTipLocations = () => {
+  return database.locations.map((location) => ({ ...location }));
 };
 
 export const comboFunction = () => {
